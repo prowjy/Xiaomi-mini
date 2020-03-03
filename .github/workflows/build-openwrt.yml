@@ -53,7 +53,7 @@ jobs:
         curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
 
     - name: Clone source code
-      run: git clone -b $REPO_BRANCH $REPO_URL openwrt
+      run: git clone -b dev-19.07 https://github.com/Lienol/openwrt openwrt
 
     - name: clean feeds
       run: cd openwrt && ./scripts/feeds clean
